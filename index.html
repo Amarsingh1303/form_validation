@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation using Regular Expression</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Online Examination Portal </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="result"></div>
+    </div>
+    <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> -->
+
+    <!-- form -->
+    <div class="container">
+        <form method="POST">
+            <h1 class="text-center">Registration Page</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                    placeholder="Enter your name">
+                <small id="helpId" class="form-text text-muted invalid-feedback">please follow rules</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId"
+                    placeholder="Enter your email">
+                <small id="helpId" class="form-text text-muted invalid-feedback">please follow rules</small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">phone</label>
+                <input type="text" class="form-control" name="phone" id="phone" aria-describedby="helpId"
+                    placeholder="Enter your phone">
+                <small id="helpId" class="form-text text-muted invalid-feedback">please follow rules</small>
+            </div>
+            <button type="submit" id="submitBTn" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
